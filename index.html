@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas de Benedito Lambari</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #003366;
+            color: #000;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #002a58;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 36px;
+        }
+
+        .header-img {
+            max-width: 100%;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: #003366;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #001f4d;
+        }
+
+        .recipe-card {
+            margin-bottom: 20px;
+        }
+
+        .recipe-card img {
+            max-height: 200px;
+        }
+
+        #meuBotao {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #003366;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #meuBotao:hover {
+            background-color: #001f4d;
+        }
+
+        #meuBotao2 {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #800000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #meuBotao2:hover {
+            background-color: #B22222;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Início</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header">
+
+        <div class="container">
+            <h1 id="fadeInTitle" style="display: none;">BEM VINDO AO SITE DITO LAMBARI</h1>
+            <p>Descubra as receitas mais deliciosas da culinária cuiabana.</p>
+            <a class="btn btn-primary" href="receitas.html">Ver Receitas</a>
+        </div>
+        <img class="header-img mt-5" src="lambari.png" alt="Imagem de entrada">
+    </div>
+    <button id="meuBotao2">Clique para abrir um pop-up</button>
+    <div class="container mt-5">
+        <h2>Um Pouco Sobre Dito</h2>
+        <p>
+            Benedito Lambari é um cozinheiro mestre na culinária cuiabana, famoso por suas habilidades culinárias
+            únicas e paixão pela comida. Com mais de 20 anos de experiência, Dito é conhecido por suas receitas
+            autênticas e saborosas que destacam a rica tradição da culinária de Mato Grosso.
+
+
+        </p>
+        <p>
+            Este site é dedicado a compartilhar suas melhores receitas, segredos culinários e histórias gastronômicas.
+            Explore as receitas de Dito e experimente a deliciosa comida cuiabana em sua própria cozinha.
+
+            <button id="meuBotao">Clique para mostrar/ocultar as últimas receitas</button>
+        </p>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Últimas Receitas</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card recipe-card">
+                    <img src="imagem-receita-1.jpg" class="card-img-top" alt="Receita 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Pudim de Leite Condensado</h5>
+                        <p class="card-text">Um delicioso pudim cremoso de leite condensado.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card recipe-card">
+                    <img src="imagem-receita-2.jpg" class="card-img-top" alt="Receita 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Frango ao Curry</h5>
+                        <p class="card-text">Uma receita exótica de frango ao curry com temperos indianos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card recipe-card">
+                    <img src="imagem-receita-3.jpg" class="card-img-top" alt="Receita 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Salada de Quinoa</h5>
+                        <p class="card-text">Uma salada saudável e saborosa de quinoa com legumes frescos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+
+<script>
+    // mostrar e esconder
+    $(document).ready(function () {
+        $(".recipe-card").click(function () {
+            $(this).find(".card-body").slideToggle();
+        });
+    });
+
+</script>
+
+
+
+<script> // botão das receitas
+    $(document).ready(function () {
+        // Método 1: SlideToggle para mostrar/ocultar as últimas receitas
+        $("#meuBotao").click(function () {
+            $(".recipe-card").slideToggle();
+        });
+
+        
+    
+    });
+</script>
+<script>//botão pop-up
+    $("#meuBotao2").click(function () {
+        alert("Aqui está o pop-up!");
+    });
+
+    $("#meuBotao2").hover(function () {
+        $(this).css("background-color", "#800000");
+        $(this).css("color", "#fff");
+    }, function () {
+        $(this).css("background-color", "");
+        $(this).css("color", "");
+    });
+</script>
+
+<script>//navbar
+    $(document).ready(function () {
+        // Método para alterar o cursor para 'crosshair' ao passar o mouse sobre a barra de navegação
+        $(".navbar").hover(function () {
+            $(this).css("cursor", "crosshair");
+        }, function () {
+            $(this).css("cursor", ""); // Retorna ao cursor padrão ao tirar o mouse
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        // Método para aplicar fadeIn em um elemento ao carregar a página
+        $("#fadeInTitle").fadeIn(2000); // O elemento será exibido suavemente durante 2 segundos (2000 milissegundos)
+    });
+</script>
+
+
+</html>
